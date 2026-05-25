@@ -1,0 +1,23 @@
+================================================
+  SISTEMA DE ENTRADAS - TECNOLÓGICO
+  Versión Google Cloud (GCP) - Marzo 2026
+================================================
+
+REQUISITOS EN CUALQUIER COMPUTADORA:
+  - Windows 7, 8, 10 u 11
+  - .NET Framework 4.7.2 (ya incluido en Windows 10/11)
+  - Conexión obligatoria a Internet (para conectarse a Google Cloud)
+
+INSTRUCCIONES DE USO rápido:
+  1. Extraer o copiar los archivos de esta carpeta.
+  2. Ejecutar únicamente el archivo: 👉 proyecto.exe
+  3. Al iniciar, usa estas credenciales de administrador (si no las cambiaste):
+        Usuario:    admin
+        Contraseña: admin123
+
+BASE DE DATOS EN LA NUBE:
+  - Servidor: Google Cloud SQL (IP: 35.232.208.144)
+  - La conexión está encriptada y es automática.
+  - Verifica las reglas de Firewall de tu SQL Server en Google Cloud para permitir la IP externa de las otras computadoras (`Autorizar Redes` a 0.0.0.0/0) en caso de fallas de conexión o tiempo de espera agotado.
+
+================================================

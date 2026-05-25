@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte Final de Residencia Profesional</title>
+<style>
+  body { font-family: "Times New Roman", Times, serif; font-size: 12pt; margin: 2.5cm; line-height: 1.5; color: #000; }
+  h1 { font-size: 14pt; font-weight: bold; text-align: center; text-transform: uppercase; margin-top: 40px; margin-bottom: 10px; }
+  h2 { font-size: 13pt; font-weight: bold; text-align: left; margin-top: 30px; margin-bottom: 8px; }
+  h3 { font-size: 12pt; font-weight: bold; margin-top: 20px; margin-bottom: 6px; }
+  p { text-align: justify; margin-bottom: 10px; }
+  ul, ol { margin-left: 30px; margin-bottom: 10px; }
+  li { margin-bottom: 4px; }
+  .portada { page-break-after: always; height: 90vh; }
+  .seccion { page-break-before: always; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  td, th { border: 1px solid #000; padding: 6px 10px; font-size: 11pt; }
+  th { background-color: #d0d0d0; font-weight: bold; text-align: center; }
+  .centrado { text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- ===================== PORTADA ===================== -->
+<div class="portada">
+  &nbsp;
+</div>
+
+<!-- ===================== ÍNDICE ===================== -->
+<div class="seccion">
+<h1>Índice</h1>
+<p>Generalidades del Proyecto .................................................... 3</p>
+<p>Objetivo General y Específicos ................................................ 4</p>
+<p>Justificación .......................................................................... 5</p>
+<p>Marco Teórico ........................................................................ 6</p>
+<p>Desarrollo .............................................................................. 12</p>
+<p>&nbsp;&nbsp;Requisitos Funcionales y No Funcionales ................................ 13</p>
+<p>&nbsp;&nbsp;Cronograma de Actividades .................................................. 16</p>
+<p>Resultados ............................................................................. 17</p>
+<p>Conclusión ............................................................................. 18</p>
+</div>
+
+<!-- ===================== GENERALIDADES ===================== -->
+<div class="seccion">
+<h1>Generalidades del Proyecto</h1>
+
+<table>
+  <tr><th colspan="2">Datos del Estudiante y del Proyecto</th></tr>
+  <tr><td><strong>Nombre del estudiante</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Número de control</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Carrera</strong></td><td>Ingeniería en Sistemas Computacionales</td></tr>
+  <tr><td><strong>Semestre</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Nombre de la empresa / organización</strong></td><td>Instituto Tecnológico de Tlaxiaco</td></tr>
+  <tr><td><strong>Giro de la empresa</strong></td><td>Educación pública de nivel superior</td></tr>
+  <tr><td><strong>Dirección de la empresa</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Nombre del asesor interno</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Nombre del asesor externo</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Nombre del proyecto</strong></td><td>Sistema de Control de Entradas para el Instituto Tecnológico de Tlaxiaco</td></tr>
+  <tr><td><strong>Periodo de residencia</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Fecha de inicio</strong></td><td>&nbsp;</td></tr>
+  <tr><td><strong>Fecha de término</strong></td><td>&nbsp;</td></tr>
+</table>
+
+<h2>Descripción del Proyecto</h2>
+<p>
+El presente proyecto consiste en el desarrollo de un <strong>Sistema de Control de Entradas</strong> para el Instituto Tecnológico de Tlaxiaco, implementado como una aplicación de escritorio desarrollada en C# con Windows Forms y conectada a una base de datos SQL Server. El sistema permite registrar, consultar, modificar y eliminar información de alumnos y profesores, así como gestionar el acceso mediante un sistema de autenticación con roles diferenciados (superusuario y usuario estándar).
+</p>
+<p>
+El sistema fue diseñado para operar tanto en modo local (cuando la base de datos reside en la misma máquina) como en modo de red (cuando varios clientes se conectan a un servidor centralizado), e incluso en la nube. Cuenta con módulos para la gestión de alumnos, gestión de profesores, control de usuarios y generación de reportes exportables a Excel.
+</p>
+
+<h2>Problemática Identificada</h2>
+<p>
+El Instituto Tecnológico de Tlaxiaco carecía de un sistema digital centralizado para el control de asistencia y registro de entradas de sus estudiantes y docentes. El proceso se realizaba de forma manual, lo que generaba inconsistencias en los datos, pérdida de información y dificultades para generar reportes confiables. Esta situación demandaba el desarrollo de una solución tecnológica que automatizara y centralizara dicho proceso.
+</p>
+</div>
+
+<!-- ===================== OBJETIVO ===================== -->
+<div class="seccion">
+<h1>Objetivo General y Específicos</h1>
+
+<h2>Objetivo General</h2>
+<p>
+Desarrollar e implementar un sistema de escritorio para el control de entradas del Instituto Tecnológico de Tlaxiaco, que permita gestionar de manera eficiente el registro de alumnos y profesores, automatizando los procesos de captura, consulta, modificación y eliminación de datos, con acceso controlado por roles de usuario y conectividad a base de datos SQL Server en red local.
+</p>
+
+<h2>Objetivos Específicos</h2>
+<ol>
+  <li>Diseñar y estructurar una base de datos relacional en SQL Server que almacene la información de alumnos, profesores y usuarios del sistema de manera organizada e íntegra.</li>
+  <li>Desarrollar módulos CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión completa de registros de alumnos y profesores desde una interfaz de usuario amigable en Windows Forms.</li>
+  <li>Implementar un sistema de autenticación con dos niveles de acceso: superusuario (acceso total) y usuario estándar (acceso restringido), garantizando la seguridad de la información.</li>
+  <li>Diseñar una arquitectura cliente-servidor que permita la operación del sistema en red local, posibilitando que múltiples estaciones de trabajo accedan a la misma base de datos centralizada.</li>
+  <li>Integrar funcionalidades de validación de datos en el frontend para asegurar la calidad e integridad de la información ingresada al sistema.</li>
+  <li>Implementar la funcionalidad de exportación de datos a formato Excel, facilitando la generación de reportes por parte del personal administrativo.</li>
+  <li>Desarrollar un módulo de gestión de usuarios que permita al superusuario crear, activar, desactivar y monitorear el estado de conexión de los usuarios en tiempo real.</li>
+</ol>
+</div>
+
+<!-- ===================== JUSTIFICACIÓN ===================== -->
+<div class="seccion">
+<h1>Justificación</h1>
+
+<p>
+La implementación de un Sistema de Control de Entradas en el Instituto Tecnológico de Tlaxiaco responde a una necesidad real y urgente dentro de la institución: la modernización de los procesos administrativos relacionados con el registro y control de acceso de su comunidad estudiantil y docente.
+</p>
+<p>
+En la actualidad, la gestión manual de asistencias y entradas conlleva múltiples problemas operativos. La falta de un sistema centralizado provoca duplicidad de información, errores en el registro de datos personales de alumnos y profesores, dificultad para generar reportes estadísticos y una inversión innecesaria de tiempo por parte del personal administrativo. Ante esta situación, el desarrollo de una solución tecnológica eficiente se convierte en una prioridad institucional.
+</p>
+<p>
+Desde el punto de vista tecnológico, el uso de C# con .NET Framework y Windows Forms garantiza una aplicación robusta, de bajo consumo de recursos y compatible con el parque computacional existente en la institución. La elección de SQL Server como gestor de base de datos proporciona confiabilidad, seguridad transaccional y capacidades avanzadas de consulta para el manejo de grandes volúmenes de datos.
+</p>
+<p>
+La arquitectura cliente-servidor implementada permite que el sistema sea utilizado simultáneamente desde múltiples equipos de la red interna del plantel, sin requerir infraestructura costosa ni conexión a Internet. Esto asegura la continuidad del servicio incluso ante fallas de conectividad externa.
+</p>
+<p>
+El sistema también contribuye a la formación profesional del residente, ya que involucra el dominio de tecnologías ampliamente demandadas en el mercado laboral como el desarrollo de aplicaciones de escritorio, diseño de bases de datos relacionales, programación orientada a objetos y arquitecturas de software multicapa.
+</p>
+<p>
+Por todo lo anterior, el desarrollo de este sistema representa una solución pertinente, viable y de alto impacto para la institución, alineada con los objetivos del programa de residencias profesionales del Tecnológico Nacional de México.
+</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+﻿Microsoft (R) Build Engine, versión 4.8.9037.0
+[Microsoft .NET Framework, versión 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Los proyectos de esta solución se van a compilar de uno en uno. Para habilitar la compilación en paralelo, agregue el modificador "/m".
+Compilación iniciada a las 04/03/2026 5:25:48.
+Proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" en el nodo 1 (Rebuild destinos).
+Compilando con la versión de herramientas "2.0".
+Destino "ValidateSolutionConfiguration" en el archivo "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln.metaproj" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (punto de entrada):
+Se omitió la tarea "Error" debido a una condición falsa (False); (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) se evaluó como (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{78DBB3BF-3312-44FF-AB22-686CD20D961A}" AbsolutePath="C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' != 'true')).
+Se omitió la tarea "Warning" debido a una condición falsa (False); (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) se evaluó como (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{78DBB3BF-3312-44FF-AB22-686CD20D961A}" AbsolutePath="C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' == 'true')).
+Usando la tarea "Message" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "Message"
+  Compilando la configuración de soluciones "Debug|Any CPU".
+Ejecución de la tarea "Message" terminada.
+Compilación terminada del destino "ValidateSolutionConfiguration" en el proyecto "proyecto.sln".
+Destino "ValidateToolsVersions" en el archivo "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln.metaproj" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (punto de entrada):
+Se omitió la tarea "Error" debido a una condición falsa (False); ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) se evaluó como ('4.0' == '2.0' and ('' != '2.0' and '' != '')).
+Compilación terminada del destino "ValidateToolsVersions" en el proyecto "proyecto.sln".
+Destino "ValidateProjects" en el archivo "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln.metaproj" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (punto de entrada):
+Compilación terminada del destino "ValidateProjects" en el proyecto "proyecto.sln".
+Destino "Rebuild" en el archivo "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln.metaproj" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (punto de entrada):
+Usando la tarea "MSBuild" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "MSBuild"
+  Propiedades globales:
+    BuildingSolutionFile=true
+    CurrentSolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{78DBB3BF-3312-44FF-AB22-686CD20D961A}" AbsolutePath="C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  </SolutionConfiguration>
+    SolutionDir=C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\
+    SolutionExt=.sln
+    SolutionFileName=proyecto.sln
+    SolutionName=proyecto
+    SolutionPath=C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln
+  Propiedades adicionales del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj":
+    Configuration=Debug
+    Platform=AnyCPU
+    VisualStudioVersion=11.0
+Invalidando el destino "GetFrameworkPaths" del proyecto"C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" con el destino "GetFrameworkPaths" del proyecto "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets".
+Invalidando el destino "SatelliteDllsProjectOutputGroup" del proyecto"C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" con el destino "SatelliteDllsProjectOutputGroup" del proyecto "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets".
+El proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (1) está compilando "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (2) en el nodo 1 (Rebuild destinos).
+Compilando con la versión de herramientas "15.0".
+El archivo del proyecto contiene ToolsVersion="15.0". Este conjunto de herramientas falta o es desconocido, en cuyo caso es posible que pueda resolver este problema instalando la versión apropiada de MSBuild. También es posible que, por motivos de directiva, se haya exigido a la compilación que use un valor determinado para ToolsVersion. Se tratará el proyecto como si contuviera ToolsVersion="4.0". Para obtener más información, vea http://go.microsoft.com/fwlink/?LinkId=291333.
+Destino "_CheckForInvalidConfigurationAndPlatform" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (punto de entrada):
+Se omitió la tarea "Error" debido a una condición falsa (False); ( '$(_InvalidConfigurationError)' == 'true' ) se evaluó como ( '' == 'true' ).
+Se omitió la tarea "Warning" debido a una condición falsa (False); ( '$(_InvalidConfigurationWarning)' == 'true' ) se evaluó como ( '' == 'true' ).
+Usando la tarea "Message" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "Message"
+  Configuration=Debug
+Ejecución de la tarea "Message" terminada.
+Tarea "Message"
+  Platform=AnyCPU
+Ejecución de la tarea "Message" terminada.
+Se omitió la tarea "Error" debido a una condición falsa (False); ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) se evaluó como ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Se omitió la tarea "Error" debido a una condición falsa (False); ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) se evaluó como ('obj\' != '' and !HasTrailingSlash('obj\')).
+Se omitió la tarea "Error" debido a una condición falsa (False); ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) se evaluó como ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
+Compilación terminada del destino "_CheckForInvalidConfigurationAndPlatform" en el proyecto "proyecto.csproj".
+Destino "BeforeRebuild" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Rebuild" depende de él):
+Compilación terminada del destino "BeforeRebuild" en el proyecto "proyecto.csproj".
+Destino "BeforeClean" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Clean" depende de él):
+Compilación terminada del destino "BeforeClean" en el proyecto "proyecto.csproj".
+Se omitió el destino "UnmanagedUnregistration" debido a una condición falsa (False); ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) se evaluó como ((('' != '' or '' != 'true' or 'WinExe' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\proyecto.csproj.UnmanagedRegistration.cache')).
+Destino "CoreClean" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Clean" depende de él):
+Usando la tarea "Delete" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "Delete"
+Ejecución de la tarea "Delete" terminada.
+Usando la tarea "ReadLinesFromFile" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "ReadLinesFromFile"
+Ejecución de la tarea "ReadLinesFromFile" terminada.
+Usando la tarea "FindUnderPath" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "FindUnderPath"
+  La ruta de comparación es "bin\Debug\".
+Ejecución de la tarea "FindUnderPath" terminada.
+Tarea "FindUnderPath"
+  La ruta de comparación es "obj\Debug\".
+Ejecución de la tarea "FindUnderPath" terminada.
+Tarea "Delete"
+  Se eliminará el archivo "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\obj\Debug\proyecto.csprojResolveAssemblyReference.cache".
+  El archivo"C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\obj\Debug\proyecto.exe" no existe. Se omitirá.
+  El archivo"C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\obj\Debug\proyecto.pdb" no existe. Se omitirá.
+Ejecución de la tarea "Delete" terminada.
+Usando la tarea "RemoveDuplicates" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "RemoveDuplicates"
+Ejecución de la tarea "RemoveDuplicates" terminada.
+Usando la tarea "MakeDir" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "MakeDir"
+Ejecución de la tarea "MakeDir" terminada.
+Usando la tarea "WriteLinesToFile" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "WriteLinesToFile"
+Ejecución de la tarea "WriteLinesToFile" terminada.
+Compilación terminada del destino "CoreClean" en el proyecto "proyecto.csproj".
+Destino "AssignProjectConfiguration" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "CleanReferencedProjects" depende de él):
+Usando la tarea "AssignProjectConfiguration" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "AssignProjectConfiguration"
+Ejecución de la tarea "AssignProjectConfiguration" terminada.
+Compilación terminada del destino "AssignProjectConfiguration" en el proyecto "proyecto.csproj".
+Destino "_SplitProjectReferencesByFileExistence" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "CleanReferencedProjects" depende de él):
+Se omitió la tarea "ResolveNonMSBuildProjectOutput" debido a una condición falsa (False); ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') se evaluó como (''=='true' and ''!='').
+Compilación terminada del destino "_SplitProjectReferencesByFileExistence" en el proyecto "proyecto.csproj".
+Destino "CleanReferencedProjects" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Clean" depende de él):
+Se omitió la tarea "MSBuild" debido a una condición falsa (False); ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') se evaluó como ('' != 'true' and 'true' == 'true' and '' != '').
+Compilación terminada del destino "CleanReferencedProjects" en el proyecto "proyecto.csproj".
+Destino "CleanPublishFolder" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Clean" depende de él):
+Se omitió la tarea "RemoveDir" debido a una condición falsa (False); ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) se evaluó como ('bin\Debug\app.publish\'=='bin\Debug\app.publish\' and Exists('bin\Debug\app.publish\')).
+Compilación terminada del destino "CleanPublishFolder" en el proyecto "proyecto.csproj".
+Destino "AfterClean" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Clean" depende de él):
+Compilación terminada del destino "AfterClean" en el proyecto "proyecto.csproj".
+Se omitió el destino "EntityClean" debido a una condición falsa (False); ('@(EntityDeploy)' != '') se evaluó como ('' != '').
+Destino "Clean" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Rebuild" depende de él):
+Compilación terminada del destino "Clean" en el proyecto "proyecto.csproj".
+Destino "CleanXsdCodeGen" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Rebuild" depende de él):
+Tarea "Delete"
+Ejecución de la tarea "Delete" terminada.
+Compilación terminada del destino "CleanXsdCodeGen" en el proyecto "proyecto.csproj".
+Se omitió el destino "EntityDeploy" debido a una condición falsa (False); ('@(EntityDeploy)' != '') se evaluó como ('' != '').
+Destino "BeforeBuild" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "Build" depende de él):
+Compilación terminada del destino "BeforeBuild" en el proyecto "proyecto.csproj".
+Destino "BuildOnlySettings" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "CoreBuild" depende de él):
+Compilación terminada del destino "BuildOnlySettings" en el proyecto "proyecto.csproj".
+Destino "GetFrameworkPaths" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "PrepareForBuild" depende de él):
+Compilación terminada del destino "GetFrameworkPaths" en el proyecto "proyecto.csproj".
+Se omitió el destino "GetWinFXPath" debido a una condición falsa (False); (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) se evaluó como (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+Destino "GetReferenceAssemblyPaths" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "PrepareForBuild" depende de él):
+Usando la tarea "GetReferenceAssemblyPaths" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "GetReferenceAssemblyPaths"
+Ejecución de la tarea "GetReferenceAssemblyPaths" terminada.
+Compilación terminada del destino "GetReferenceAssemblyPaths" en el proyecto "proyecto.csproj".
+Destino "PrepareForBuild" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "CoreBuild" depende de él):
+Usando la tarea "FindAppConfigFile" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "FindAppConfigFile"
+  Se encontró "App.config".
+Ejecución de la tarea "FindAppConfigFile" terminada.
+Tarea "MakeDir"
+Ejecución de la tarea "MakeDir" terminada.
+Compilación terminada del destino "PrepareForBuild" en el proyecto "proyecto.csproj".
+Se omitió el destino "PreBuildEvent" debido a una condición falsa (False); ('$(PreBuildEvent)'!='') se evaluó como (''!='').
+Destino "BeforeResolveReferences" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveReferences" depende de él):
+Compilación terminada del destino "BeforeResolveReferences" en el proyecto "proyecto.csproj".
+Se omitió el destino "AssignProjectConfiguration". Compilado previamente de forma correcta.
+Se omitió el destino "AssignProjectConfiguration". Compilado previamente de forma correcta.
+Se omitió el destino "_SplitProjectReferencesByFileExistence". Compilado previamente de forma correcta.
+Destino "ResolveProjectReferences" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveReferences" depende de él):
+Se omitió la tarea "MSBuild" debido a una condición falsa (False); ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') se evaluó como ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '11.0' != '10.0' and '' != '').
+Se omitió la tarea "MSBuild" debido a una condición falsa (False); ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') se evaluó como ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '11.0' == '10.0' and '' != '').
+Se omitió la tarea "MSBuild" debido a una condición falsa (False); ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') se evaluó como ('' == 'true' and '' != '' and '' != 'true' and 'true' == 'true' and '' != '').
+Se omitió la tarea "MSBuild" debido a una condición falsa (False); ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') se evaluó como ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+Se omitió la tarea "Warning" debido a una condición falsa (False); ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') se evaluó como ('' != '' and '' != '').
+Compilación terminada del destino "ResolveProjectReferences" en el proyecto "proyecto.csproj".
+Se omitió el destino "ResolveNativeReferences" debido a una condición falsa (False); ('@(NativeReference)'!='') se evaluó como (''!='').
+Se omitió el destino "GetFrameworkPaths". Compilado previamente de forma correcta.
+Se omitió el destino "GetReferenceAssemblyPaths". Compilado previamente de forma correcta.
+Se omitió el destino "PrepareForBuild". Compilado previamente de forma correcta.
+Destino "GetInstalledSDKLocations" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveSDKReferences" depende de él):
+Se omitió la tarea "GetInstalledSDKLocations" debido a una condición falsa (False); ('@(SDKReference)' != '') se evaluó como ('' != '').
+Compilación terminada del destino "GetInstalledSDKLocations" en el proyecto "proyecto.csproj".
+Destino "ResolveSDKReferences" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveAssemblyReferences" depende de él):
+Se omitió la tarea "ResolveSDKReference" debido a una condición falsa (False); ('@(SDKReference)'!='') se evaluó como (''!='').
+Compilación terminada del destino "ResolveSDKReferences" en el proyecto "proyecto.csproj".
+Se omitió el destino "ResolveSDKReferences". Compilado previamente de forma correcta.
+Destino "ExpandSDKReferences" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveAssemblyReferences" depende de él):
+Se omitió la tarea "GetSDKReferenceFiles" debido a una condición falsa (False); ('@(ResolvedSDKReference)'!='') se evaluó como (''!='').
+Compilación terminada del destino "ExpandSDKReferences" en el proyecto "proyecto.csproj".
+Destino "ResolveAssemblyReferences" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveReferences" depende de él):
+Usando la tarea "ResolveAssemblyReference" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "ResolveAssemblyReference"
+  TargetFrameworkMoniker:
+      .NETFramework,Version=v4.7.2
+  TargetFrameworkMonikerDisplayName:
+      .NET Framework 4.7.2
+  TargetedRuntimeVersion:
+      v4.0.30319
+  Assemblies:
+      System
+      System.Configuration
+      System.Xml.Linq
+      System.Data.DataSetExtensions
+      Microsoft.CSharp
+      System.Data
+      System.Deployment
+      System.Drawing
+      System.Net.Http
+      System.Windows.Forms
+      System.Xml
+      System.Core
+  AssemblyFiles:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+  CandidateAssemblyFiles:
+  TargetFrameworkDirectories:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\
+  InstalledAssemblyTables:
+  IgnoreInstalledAssemblyTable:
+      False
+  SearchPaths:
+      {CandidateAssemblyFiles}
+      {HintPathFromItem}
+      {TargetFrameworkDirectory}
+      {Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}
+      {AssemblyFolders}
+      {GAC}
+      {RawFileName}
+      bin\Debug\
+  AllowedAssemblyExtensions:
+      .winmd
+      .dll
+      .exe
+  AllowedRelatedFileExtensions:
+      .pdb
+      .xml
+      .pri
+  AppConfigFile:
+      App.config
+  AutoUnify:
+      False
+  CopyLocalDependenciesWhenParentReferenceInGac:
+      True
+  FindDependencies:
+      True
+  TargetProcessorArchitecture:
+      msil
+  StateFile:
+      obj\Debug\proyecto.csprojResolveAssemblyReference.cache
+  InstalledAssemblySubsetTables:
+  IgnoreInstalledAssemblySubsetTable:
+      False
+  TargetFrameworkSubsets:
+  FullTargetFrameworkSubsetNames:
+      Full
+  ProfileName:
+      
+  FullFrameworkFolders:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\
+  LatestTargetFrameworkDirectories:
+  ProfileTablesLocation:
+  Referencia principal "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll".
+      Esta referencia no es "CopyLocal" porque se encuentra en un directorio de Frameworks.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Configuration.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Configuration.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+  Referencia principal "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      La ruta de acceso del archivo resuelta es "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll".
+      Se encontró una referencia en la ubicación de ruta de acceso de búsqueda "{TargetFrameworkDirectory}".
+          Para SearchPath "{TargetFrameworkDirectory}".
+          Se consideró "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.winmd", pero no existía.
+      Esta referencia no es "CopyLocal" porque es un archivo necesario.
+      El valor de ImageRuntimeVersion para esta referencia es "v4.0.30319".
+Ejecución de la tarea "ResolveAssemblyReference" terminada.
+Compilación terminada del destino "ResolveAssemblyReferences" en el proyecto "proyecto.csproj".
+Se omitió el destino "PrepareForBuild". Compilado previamente de forma correcta.
+Se omitió el destino "ResolveKeySource" debido a una condición falsa (False); ($(SignManifests) == 'true' or $(SignAssembly) == 'true') se evaluó como ( == 'true' or  == 'true').
+Se omitió el destino "ResolveAssemblyReferences". Compilado previamente de forma correcta.
+Destino "ResolveComReferences" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "ResolveReferences" depende de él):
+Tarea "MakeDir"
+Ejecución de la tarea "MakeDir" terminada.
+Usando la tarea "ResolveComReference" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "ResolveComReference"
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(2015,5): error MSB3091: Error en la tarea porque "AxImp.exe" no se encuentra o no está instalada la versión correcta de Microsoft Windows SDK. La tarea busca "AxImp.exe" en el subdirectorio "bin" de la ubicación especificada en el valor InstallationFolder de la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86. Puede que el problema se solucione de una de estas formas:  1) Instale Microsoft Windows SDK. 2) Instale Visual Studio 2010. 3) Establezca manualmente la clave del Registro indicada en la ubicación correcta. 4) Pase la ubicación correcta en el parámetro "ToolPath" de la tarea. [C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+Ejecución de la tarea "ResolveComReference" terminada -- ERROR.
+Compilación terminada del destino "ResolveComReferences" en el proyecto "proyecto.csproj" -- ERROR.
+Destino "_CheckForCompileOutputs" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "_CleanGetCurrentAndPriorFileWrites" depende de él):
+Compilación terminada del destino "_CheckForCompileOutputs" en el proyecto "proyecto.csproj".
+Se omitió el destino "_SGenCheckForOutputs" debido a una condición falsa (False); ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) se evaluó como ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Destino "_CleanGetCurrentAndPriorFileWrites" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "_CleanRecordFileWrites" depende de él):
+Tarea "ReadLinesFromFile"
+Ejecución de la tarea "ReadLinesFromFile" terminada.
+Usando la tarea "ConvertToAbsolutePath" del ensamblado "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tarea "ConvertToAbsolutePath"
+Ejecución de la tarea "ConvertToAbsolutePath" terminada.
+Tarea "FindUnderPath"
+  La ruta de comparación es "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto".
+Ejecución de la tarea "FindUnderPath" terminada.
+Tarea "FindUnderPath"
+  La ruta de comparación es "bin\Debug\".
+Ejecución de la tarea "FindUnderPath" terminada.
+Tarea "FindUnderPath"
+  La ruta de comparación es "obj\Debug\".
+Ejecución de la tarea "FindUnderPath" terminada.
+Tarea "RemoveDuplicates"
+Ejecución de la tarea "RemoveDuplicates" terminada.
+Compilación terminada del destino "_CleanGetCurrentAndPriorFileWrites" en el proyecto "proyecto.csproj".
+Destino "_CleanRecordFileWrites" en el archivo "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" del proyecto "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (el destino "CoreBuild" depende de él):
+Tarea "RemoveDuplicates"
+Ejecución de la tarea "RemoveDuplicates" terminada.
+Tarea "MakeDir"
+Ejecución de la tarea "MakeDir" terminada.
+Tarea "WriteLinesToFile"
+Ejecución de la tarea "WriteLinesToFile" terminada.
+Compilación terminada del destino "_CleanRecordFileWrites" en el proyecto "proyecto.csproj".
+Compilación del proyecto terminada "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (Rebuild destinos) -- ERROR.
+Ejecución de la tarea "MSBuild" terminada -- ERROR.
+Compilación terminada del destino "Rebuild" en el proyecto "proyecto.sln" -- ERROR.
+Compilación del proyecto terminada "C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (Rebuild destinos) -- ERROR.
+
+ERROR al compilar.
+
+"C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto.sln" (Rebuild destino) (1) ->
+"C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj" (Rebuild destino) (2) ->
+(ResolveComReferences destino) -> 
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(2015,5): error MSB3091: Error en la tarea porque "AxImp.exe" no se encuentra o no está instalada la versión correcta de Microsoft Windows SDK. La tarea busca "AxImp.exe" en el subdirectorio "bin" de la ubicación especificada en el valor InstallationFolder de la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86. Puede que el problema se solucione de una de estas formas:  1) Instale Microsoft Windows SDK. 2) Instale Visual Studio 2010. 3) Establezca manualmente la clave del Registro indicada en la ubicación correcta. 4) Pase la ubicación correcta en el parámetro "ToolPath" de la tarea. [C:\Users\User\Music\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+
+    0 Advertencia(s)
+    1 Errores
+
+Tiempo transcurrido 00:00:00.83

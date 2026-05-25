@@ -1,0 +1,13 @@
+﻿  Determinando los proyectos que se van a restaurar...
+  No hay nada que hacer. Ninguno de los proyectos especificados contiene paquetes para restaurar.
+C:\Program Files\dotnet\sdk\9.0.100\Microsoft.Common.CurrentVersion.targets(3041,5): error MSB4216: No se pudo ejecutar la tarea "ResolveComReference" porque MSBuild no pudo crear o conectarse a un host de tareas con runtime "NET" y arquitectura "x86".  Aseg├║rese de que (1) el runtime y/o la arquitectura solicitados est├®n disponibles en el equipo y de que (2) el archivo ejecutable "C:\Program Files\dotnet\sdk\9.0.100\MSBuild.dll" requerido existe y se puede ejecutar. [c:\Users\User\Documents\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+C:\Program Files\dotnet\sdk\9.0.100\Microsoft.Common.CurrentVersion.targets(3061,7): error MSB4028: Las salidas de la tarea "ResolveComReference" no pudieron recuperarse del par├ímetro "ResolvedFiles". Object type Microsoft.Build.Tasks.ResolveComReference does not match target type Microsoft.Build.BackEnd.TaskHostTask. [c:\Users\User\Documents\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+
+ERROR al compilar.
+
+C:\Program Files\dotnet\sdk\9.0.100\Microsoft.Common.CurrentVersion.targets(3041,5): error MSB4216: No se pudo ejecutar la tarea "ResolveComReference" porque MSBuild no pudo crear o conectarse a un host de tareas con runtime "NET" y arquitectura "x86".  Aseg├║rese de que (1) el runtime y/o la arquitectura solicitados est├®n disponibles en el equipo y de que (2) el archivo ejecutable "C:\Program Files\dotnet\sdk\9.0.100\MSBuild.dll" requerido existe y se puede ejecutar. [c:\Users\User\Documents\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+C:\Program Files\dotnet\sdk\9.0.100\Microsoft.Common.CurrentVersion.targets(3061,7): error MSB4028: Las salidas de la tarea "ResolveComReference" no pudieron recuperarse del par├ímetro "ResolvedFiles". Object type Microsoft.Build.Tasks.ResolveComReference does not match target type Microsoft.Build.BackEnd.TaskHostTask. [c:\Users\User\Documents\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+    0 Advertencia(s)
+    2 Errores
+
+Tiempo transcurrido 00:00:03.86

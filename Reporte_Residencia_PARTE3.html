@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte - Desarrollo, Resultados y Conclusión</title>
+<style>
+  body { font-family: "Times New Roman", Times, serif; font-size: 12pt; margin: 2.5cm; line-height: 1.5; color: #000; }
+  h1 { font-size: 14pt; font-weight: bold; text-align: center; text-transform: uppercase; margin-top: 40px; margin-bottom: 10px; }
+  h2 { font-size: 13pt; font-weight: bold; text-align: left; margin-top: 30px; margin-bottom: 8px; }
+  h3 { font-size: 12pt; font-weight: bold; margin-top: 20px; margin-bottom: 6px; }
+  p { text-align: justify; margin-bottom: 10px; }
+  ul, ol { margin-left: 30px; margin-bottom: 10px; }
+  li { margin-bottom: 5px; }
+  .seccion { page-break-before: always; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 11pt; }
+  td, th { border: 1px solid #000; padding: 6px 10px; }
+  th { background-color: #d0d0d0; font-weight: bold; text-align: center; }
+  .cron-mes { background-color: #b8d4f0; }
+</style>
+</head>
+<body>
+
+<!-- ===================== DESARROLLO ===================== -->
+<div class="seccion">
+<h1>Desarrollo</h1>
+
+<h2>3.1 Metodología de Desarrollo</h2>
+<p>
+El proyecto se desarrolló siguiendo una metodología incremental e iterativa, en la cual el sistema fue construido por módulos funcionales de manera progresiva. Cada iteración incluyó las fases de análisis de requerimientos, diseño, implementación y pruebas. Este enfoque permitió identificar y corregir errores de forma temprana, así como incorporar mejoras y ajustes conforme avanzaba el desarrollo.
+</p>
+
+<h2>3.2 Arquitectura del Sistema</h2>
+<p>
+El sistema sigue una arquitectura de tres capas (Three-Tier Architecture):
+</p>
+<ul>
+  <li><strong>Capa de Presentación (Frontend)</strong>: Formularios Windows Forms (C#) que constituyen la interfaz gráfica de usuario. Contiene los formularios: Login, Menú Principal, Ingresar Alumno, Modificar Alumno, Eliminar Alumno, Lista Completa de Alumnos, Ingresar Profesor, Modificar Profesor, Eliminar Profesor, Lista de Profesores y Gestión de Usuarios.</li>
+  <li><strong>Capa de Lógica de Negocio (Backend)</strong>: Clases estáticas que encapsulan la lógica del sistema: <code>Config.cs</code> (gestión de cadenas de conexión por modo), <code>BaseDeDatos.cs</code> (operaciones CRUD), <code>Validaciones.cs</code> (reglas de validación de datos) y <code>Session.cs</code> (control de sesión activa).</li>
+  <li><strong>Capa de Datos</strong>: Base de datos relacional SQL Server Express con la base de datos <em>entradas_tecnologico</em>.</li>
+</ul>
+
+<h2>3.3 Diseño de la Base de Datos</h2>
+<p>La base de datos <strong>entradas_tecnologico</strong> fue diseñada con las siguientes tablas:</p>
+
+<h3>Tabla: alumnos</h3>
+<table>
+  <tr><th>Campo</th><th>Tipo de Dato</th><th>Restricción</th><th>Descripción</th></tr>
+  <tr><td>Numero_control_alumno</td><td>NVARCHAR(20)</td><td>PRIMARY KEY</td><td>Número de control único del alumno</td></tr>
+  <tr><td>Nombre</td><td>NVARCHAR(100)</td><td>NOT NULL</td><td>Nombre(s) del alumno</td></tr>
+  <tr><td>apellido</td><td>NVARCHAR(100)</td><td>NOT NULL</td><td>Apellidos del alumno</td></tr>
+  <tr><td>carrera</td><td>NVARCHAR(100)</td><td>NOT NULL</td><td>Carrera que cursa</td></tr>
+  <tr><td>correo</td><td>NVARCHAR(150)</td><td></td><td>Correo electrónico</td></tr>
+  <tr><td>semestre</td><td>INT</td><td>NOT NULL</td><td>Semestre actual</td></tr>
+  <tr><td>grupo</td><td>NVARCHAR(10)</td><td>NOT NULL</td><td>Grupo al que pertenece</td></tr>
+  <tr><td>foto</td><td>NVARCHAR(MAX)</td><td></td><td>Imagen en formato Base64</td></tr>
+</table>
+
+<h3>Tabla: profesores</h3>
+<table>
+  <tr><th>Campo</th><th>Tipo de Dato</th><th>Restricción</th><th>Descripción</th></tr>
+  <tr><td>id_profesor</td><td>INT</td><td>PRIMARY KEY, IDENTITY</td><td>Identificador único del profesor</td></tr>
+  <tr><td>ced_profesional</td><td>NVARCHAR(13)</td><td>UNIQUE, NOT NULL</td><td>RFC / Cédula profesional</td></tr>
+  <tr><td>nombre</td><td>NVARCHAR(100)</td><td>NOT NULL</td><td>Nombre(s) del profesor</td></tr>
+  <tr><td>apellido</td><td>NVARCHAR(100)</td><td>NOT NULL</td><td>Apellidos del profesor</td></tr>
+  <tr><td>telefono</td><td>NVARCHAR(15)</td><td></td><td>Número de teléfono</td></tr>
+  <tr><td>correo</td><td>NVARCHAR(150)</td><td></td><td>Correo electrónico institucional</td></tr>
+  <tr><td>sexo</td><td>NVARCHAR(10)</td><td>NOT NULL</td><td>Sexo del profesor</td></tr>
+</table>
+
+<h3>Tabla: usuarios</h3>
+<table>
+  <tr><th>Campo</th><th>Tipo de Dato</th><th>Restricción</th><th>Descripción</th></tr>
+  <tr><td>id_usuario</td><td>INT</td><td>PRIMARY KEY, IDENTITY</td><td>Identificador único</td></tr>
+  <tr><td>usuario</td><td>NVARCHAR(50)</td><td>UNIQUE, NOT NULL</td><td>Nombre de usuario para login</td></tr>
+  <tr><td>contrasena</td><td>NVARCHAR(100)</td><td>NOT NULL</td><td>Contraseña del usuario</td></tr>
+  <tr><td>rol</td><td>NVARCHAR(20)</td><td>NOT NULL</td><td>'superusuario' o 'usuario'</td></tr>
+  <tr><td>nombre_completo</td><td>NVARCHAR(150)</td><td></td><td>Nombre real del usuario</td></tr>
+  <tr><td>activo</td><td>BIT</td><td>DEFAULT 1</td><td>Estado activo/inactivo</td></tr>
+  <tr><td>fecha_creacion</td><td>DATETIME</td><td>DEFAULT GETDATE()</td><td>Fecha de creación</td></tr>
+  <tr><td>is_online</td><td>BIT</td><td>DEFAULT 0</td><td>Estado de conexión en tiempo real</td></tr>
+  <tr><td>ultima_conexion</td><td>DATETIME</td><td></td><td>Última vez que inició sesión</td></tr>
+</table>
+
+<h2>3.4 Requisitos Funcionales</h2>
+<p>Los requisitos funcionales describen el comportamiento específico que el sistema debe realizar:</p>
+
+<h3>RF-01: Autenticación de Usuarios</h3>
+<p>El sistema debe permitir el inicio de sesión mediante usuario y contraseña. Debe verificar las credenciales contra la base de datos y otorgar acceso según el rol asignado. Debe registrar la fecha y hora del último inicio de sesión y marcar al usuario como conectado.</p>
+
+<h3>RF-02: Gestión de Alumnos</h3>
+<ul>
+  <li><strong>RF-02.1 Registro</strong>: El sistema debe permitir ingresar nuevos alumnos capturando: número de control, nombre(s), apellidos, carrera, correo, semestre, grupo y fotografía (opcional, en formato Base64).</li>
+  <li><strong>RF-02.2 Consulta</strong>: El sistema debe mostrar la lista completa de alumnos registrados con funcionalidad de búsqueda por nombre, número de control, carrera o grupo.</li>
+  <li><strong>RF-02.3 Modificación</strong>: El sistema debe permitir actualizar cualquier campo del registro de un alumno existente.</li>
+  <li><strong>RF-02.4 Eliminación</strong>: El sistema debe permitir eliminar el registro de un alumno, previa confirmación del usuario.</li>
+  <li><strong>RF-02.5 Exportación</strong>: El sistema debe permitir exportar la lista de alumnos a un archivo de Excel (.xlsx).</li>
+</ul>
+
+<h3>RF-03: Gestión de Profesores</h3>
+<ul>
+  <li><strong>RF-03.1 Registro</strong>: El sistema debe permitir ingresar nuevos profesores con: ID, RFC/cédula profesional, nombre(s), apellidos, teléfono, correo y sexo. El RFC debe ser único en el sistema.</li>
+  <li><strong>RF-03.2 Consulta</strong>: El sistema debe mostrar el listado de profesores con búsqueda por nombre, correo, ID o RFC.</li>
+  <li><strong>RF-03.3 Modificación</strong>: El sistema debe permitir actualizar los datos de un profesor existente, validando que el RFC no esté duplicado.</li>
+  <li><strong>RF-03.4 Eliminación</strong>: El sistema debe permitir eliminar el registro de un profesor con confirmación previa.</li>
+</ul>
+
+<h3>RF-04: Gestión de Usuarios del Sistema</h3>
+<ul>
+  <li><strong>RF-04.1</strong>: El superusuario debe poder crear nuevos usuarios del sistema asignándoles rol, nombre completo y credenciales.</li>
+  <li><strong>RF-04.2</strong>: El superusuario debe poder activar o desactivar cuentas de usuario.</li>
+  <li><strong>RF-04.3</strong>: El superusuario debe poder eliminar usuarios registrados.</li>
+  <li><strong>RF-04.4</strong>: El sistema debe mostrar en tiempo real qué usuarios están conectados y cuándo fue su última conexión.</li>
+</ul>
+
+<h3>RF-05: Control de Acceso por Roles</h3>
+<p>El sistema debe restringir el acceso a módulos según el rol del usuario autenticado. El rol "usuario" solo podrá acceder a consultas y registros. El rol "superusuario" tendrá acceso total incluyendo gestión de usuarios y eliminaciones.</p>
+
+<h3>RF-06: Configuración de Conexión</h3>
+<p>El sistema debe permitir operar en tres modos de conexión configurables desde código: local (SQL Server en la misma PC), red (cliente-servidor por IP en red local) y nube (servidor remoto en internet).</p>
+
+<h2>3.5 Requisitos No Funcionales</h2>
+
+<h3>RNF-01: Rendimiento</h3>
+<p>El sistema debe cargar cualquier lista de datos en un tiempo menor a 3 segundos bajo condiciones normales de red local. Las operaciones de inserción, actualización y eliminación no deben tomar más de 2 segundos.</p>
+
+<h3>RNF-02: Disponibilidad</h3>
+<p>El sistema debe estar disponible durante el horario de operación del plantel (7:00 a 22:00 horas). El servidor de base de datos debe configurarse para iniciarse automáticamente con el sistema operativo.</p>
+
+<h3>RNF-03: Usabilidad</h3>
+<p>La interfaz debe ser intuitiva y accesible para personal administrativo sin conocimientos técnicos avanzados. Los mensajes de error deben ser claros, descriptivos y en español. Los formularios deben incluir validaciones en tiempo real con retroalimentación visual.</p>
+
+<h3>RNF-04: Seguridad</h3>
+<p>Todas las consultas a la base de datos deben utilizar parámetros SQL para prevenir inyección SQL. Las credenciales de conexión a la base de datos no deben ser visibles en la interfaz de usuario. El acceso a módulos administrativos debe estar restringido por rol.</p>
+
+<h3>RNF-05: Mantenibilidad</h3>
+<p>El código debe seguir el principio de separación de responsabilidades, organizando la lógica en capas independientes (presentación, negocio y datos). Cada módulo debe ser independiente para facilitar futuras modificaciones sin afectar al resto del sistema.</p>
+
+<h3>RNF-06: Portabilidad</h3>
+<p>El ejecutable del sistema debe funcionar en cualquier PC con Windows 10 o superior que tenga instalado .NET Framework 4.7.2 o superior, sin necesidad de instalar Visual Studio u otras herramientas de desarrollo.</p>
+
+<h3>RNF-07: Escalabilidad</h3>
+<p>La arquitectura del sistema debe permitir agregar nuevos módulos sin modificar la estructura existente. La capa de datos debe soportar el crecimiento del número de registros sin degradación significativa del rendimiento.</p>
+
+<h3>RNF-08: Compatibilidad</h3>
+<p>El sistema debe ser compatible con SQL Server Express 2017 o superior. La funcionalidad de exportación a Excel debe funcionar con Microsoft Office 2016 o superior.</p>
+
+<h2>3.6 Cronograma de Actividades</h2>
+<table>
+  <tr>
+    <th>Actividad</th>
+    <th>Semana 1-2</th>
+    <th>Semana 3-4</th>
+    <th>Semana 5-6</th>
+    <th>Semana 7-8</th>
+    <th>Semana 9-10</th>
+    <th>Semana 11-12</th>
+    <th>Semana 13-14</th>
+    <th>Semana 15-16</th>
+  </tr>
+  <tr><td>Análisis de requerimientos</td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>Diseño de base de datos</td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>Configuración del entorno</td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>Módulo Login y Autenticación</td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>CRUD Alumnos</td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>CRUD Profesores</td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td></tr>
+  <tr><td>Gestión de Usuarios y Roles</td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td><td></td></tr>
+  <tr><td>Validaciones y Seguridad</td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td></tr>
+  <tr><td>Exportación a Excel</td><td></td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td></tr>
+  <tr><td>Configuración red/nube</td><td></td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td><td></td></tr>
+  <tr><td>Pruebas e integración</td><td></td><td></td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td></tr>
+  <tr><td>Correcciones y ajustes</td><td></td><td></td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td><td></td></tr>
+  <tr><td>Documentación y reporte</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="background:#4caf50;color:#fff;">✓</td></tr>
+</table>
+</div>
+
+<!-- ===================== RESULTADOS ===================== -->
+<div class="seccion">
+<h1>Resultados</h1>
+
+<p>
+Al término del período de residencia profesional, se logró desarrollar e implementar un Sistema de Control de Entradas completamente funcional para el Instituto Tecnológico de Tlaxiaco. A continuación se presentan los resultados obtenidos por módulo:
+</p>
+
+<h2>4.1 Sistema de Autenticación</h2>
+<p>
+Se implementó exitosamente un módulo de login con validación de credenciales contra la base de datos SQL Server. El sistema diferencia correctamente entre los roles de superusuario y usuario estándar, redirigiendo a cada uno a su menú correspondiente con las funcionalidades habilitadas según su nivel de acceso. Adicionalmente, se implementó el registro automático de la última conexión y el monitoreo en tiempo real del estado de los usuarios (en línea/desconectado).
+</p>
+
+<h2>4.2 Módulo de Gestión de Alumnos</h2>
+<p>
+El módulo de alumnos quedó completamente operativo con las siguientes funcionalidades validadas:
+</p>
+<ul>
+  <li>Registro de nuevos alumnos con todos sus datos personales y académicos, incluyendo fotografía comprimida en Base64.</li>
+  <li>Lista completa con búsqueda dinámica en tiempo real por múltiples campos (nombre, número de control, carrera, grupo).</li>
+  <li>Modificación de registros existentes con pre-carga automática de datos en el formulario.</li>
+  <li>Eliminación segura con diálogo de confirmación.</li>
+  <li>Exportación de listas a Excel, organizadas por carrera y semestre.</li>
+  <li>Validación de formato en todos los campos: número de control alfanumérico, correo electrónico, semestre numérico y grupo con formato estándar.</li>
+</ul>
+
+<h2>4.3 Módulo de Gestión de Profesores</h2>
+<p>
+El módulo de profesores fue implementado con todas las operaciones CRUD funcionales. Se destacan los siguientes resultados:
+</p>
+<ul>
+  <li>Registro de profesores con asignación automática de ID correlativo y validación de RFC/cédula profesional único.</li>
+  <li>Validación del formato de RFC con 12 o 13 caracteres alfanuméricos.</li>
+  <li>Lista de profesores con búsqueda por nombre, correo, ID y RFC.</li>
+  <li>Modificación de datos con validación de RFC duplicado (excluyendo el propio registro).</li>
+  <li>Eliminación con confirmación y actualización inmediata de la lista.</li>
+</ul>
+
+<h2>4.4 Módulo de Gestión de Usuarios</h2>
+<p>
+El módulo de gestión de usuarios, exclusivo para el superusuario, permite administrar completamente las cuentas del sistema. Se logró implementar la visualización en tiempo real del estado de conexión de cada usuario, con actualización automática cada 30 segundos, mostrando el semáforo visual de estado (verde = conectado, gris = desconectado) y la fecha/hora de la última sesión.
+</p>
+
+<h2>4.5 Arquitectura de Conexión Configurable</h2>
+<p>
+Se desarrolló un sistema de configuración de conexión flexible mediante la clase <code>Config.cs</code> que soporta tres modos de operación: local, red y nube. Durante las pruebas, el sistema operó correctamente en modo local (SQL Server Express en la misma máquina) y en modo red con múltiples clientes conectados simultáneamente al servidor central a través de la IP de la red local.
+</p>
+
+<h2>4.6 Pruebas Realizadas</h2>
+<table>
+  <tr><th>Tipo de Prueba</th><th>Descripción</th><th>Resultado</th></tr>
+  <tr><td>Pruebas unitarias</td><td>Validación individual de cada función CRUD</td><td>✅ Exitoso</td></tr>
+  <tr><td>Pruebas de integración</td><td>Flujo completo de registro, consulta, modificación y eliminación</td><td>✅ Exitoso</td></tr>
+  <tr><td>Pruebas de red</td><td>Conexión simultánea de 3 clientes al servidor</td><td>✅ Exitoso</td></tr>
+  <tr><td>Pruebas de seguridad</td><td>Intentos de acceso con credenciales incorrectas</td><td>✅ Bloqueado correctamente</td></tr>
+  <tr><td>Pruebas de validación</td><td>Ingreso de datos incorrectos en formularios</td><td>✅ Validado y rechazado</td></tr>
+  <tr><td>Pruebas de exportación</td><td>Generación de archivo Excel con datos reales</td><td>✅ Exitoso</td></tr>
+</table>
+</div>
+
+<!-- ===================== CONCLUSIÓN ===================== -->
+<div class="seccion">
+<h1>Conclusión</h1>
+
+<p>
+El desarrollo del Sistema de Control de Entradas para el Instituto Tecnológico de Tlaxiaco representó una experiencia de aprendizaje integral que permitió aplicar, de manera práctica y en un entorno real, los conocimientos adquiridos a lo largo de la carrera de Ingeniería en Sistemas Computacionales.
+</p>
+<p>
+Se logró cumplir con la totalidad de los objetivos planteados al inicio del proyecto: se diseñó e implementó una base de datos relacional robusta en SQL Server, se desarrollaron módulos CRUD completos para alumnos y profesores, se estableció un sistema de autenticación con control de acceso basado en roles, y se implementó una arquitectura cliente-servidor funcional que permite la operación del sistema desde múltiples estaciones de trabajo en red local.
+</p>
+<p>
+Desde el punto de vista técnico, el proyecto permitió profundizar en el dominio de tecnologías ampliamente demandadas en la industria del software: el lenguaje C# y el ecosistema .NET, el manejo de bases de datos relacionales con SQL Server, la programación de interfaces gráficas con Windows Forms, el uso de ADO.NET para el acceso a datos, y los principios de arquitectura de software en capas. Asimismo, se adquirió experiencia práctica en el manejo de sistemas en red, configuración de servidores SQL y evaluación de alternativas en la nube como Google Cloud SQL y Heroku.
+</p>
+<p>
+El sistema entregado resuelve de forma efectiva la problemática identificada en la institución, sustituyendo los procesos manuales de registro por una solución digital centralizada, segura y de fácil uso para el personal administrativo. La implementación de validaciones en tiempo real, la diferenciación de roles y el monitoreo de sesiones activas aportan valor adicional al sistema más allá del objetivo inicial.
+</p>
+<p>
+Como trabajo a futuro, se recomienda migrar la aplicación a una arquitectura web para eliminar la necesidad de instalar el ejecutable en cada equipo cliente, integrar un módulo de generación de reportes estadísticos avanzados con gráficas, implementar el registro de entradas y salidas con código de barras o QR, y considerar el despliegue en la nube mediante plataformas como Azure o Heroku para garantizar la disponibilidad del sistema desde cualquier lugar.
+</p>
+<p>
+En conclusión, la residencia profesional cumplió plenamente con su propósito formativo: consolidar competencias técnicas, desarrollar habilidades de resolución de problemas reales, fortalecer la capacidad de comunicación y documentación, y contribuir con una solución tecnológica de impacto positivo para la institución anfitriona.
+</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿
+C:\Users\User\Desktop\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\Frontend\Modificar Alumno.cs(10,22): warning CS0414: El campo 'Modificar_Alumno._gridCargado' est├í asignado pero su valor nunca se usa [C:\Users\User\Desktop\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+C:\Users\User\Desktop\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\Frontend\Eliminar Profesor.cs(10,22): warning CS0414: El campo 'Eliminar_Profesor._gridCargado' est├í asignado pero su valor nunca se usa [C:\Users\User\Desktop\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\proyecto.csproj]
+  proyecto -> C:\Users\User\Desktop\ENTRADAS-TECNOLOGICO-TERMINADO\proyecto\proyecto\bin\Debug\proyecto.exe

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte - Marco Teórico y Desarrollo</title>
+<style>
+  body { font-family: "Times New Roman", Times, serif; font-size: 12pt; margin: 2.5cm; line-height: 1.5; color: #000; }
+  h1 { font-size: 14pt; font-weight: bold; text-align: center; text-transform: uppercase; margin-top: 40px; margin-bottom: 10px; }
+  h2 { font-size: 13pt; font-weight: bold; text-align: left; margin-top: 30px; margin-bottom: 8px; }
+  h3 { font-size: 12pt; font-weight: bold; margin-top: 20px; margin-bottom: 6px; }
+  p { text-align: justify; margin-bottom: 10px; }
+  ul, ol { margin-left: 30px; margin-bottom: 10px; }
+  li { margin-bottom: 4px; }
+  .seccion { page-break-before: always; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  td, th { border: 1px solid #000; padding: 6px 10px; font-size: 11pt; }
+  th { background-color: #d0d0d0; font-weight: bold; text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- ===================== MARCO TEÓRICO ===================== -->
+<div class="seccion">
+<h1>Marco Teórico</h1>
+
+<h2>2.1 Sistemas de Información</h2>
+<p>
+Un sistema de información es un conjunto de elementos organizados que interactúan entre sí para procesar datos y producir información útil para la toma de decisiones. Según Laudon &amp; Laudon (2020), un sistema de información puede definirse técnicamente como un conjunto de componentes interrelacionados que recopilan, procesan, almacenan y distribuyen información para apoyar la toma de decisiones y el control de una organización. En el contexto del presente proyecto, el Sistema de Control de Entradas actúa como un sistema de información transaccional que centraliza los datos de alumnos y profesores del Instituto Tecnológico de Tlaxiaco.
+</p>
+
+<h2>2.2 Aplicaciones de Escritorio</h2>
+<p>
+Una aplicación de escritorio es un programa de software diseñado para ejecutarse localmente en una computadora personal, sin necesidad de un navegador web. Este tipo de aplicaciones tienen acceso directo a los recursos del sistema operativo y hardware, lo que les permite ofrecer mejor rendimiento, mayor capacidad de procesamiento y funcionalidad sin depender de una conexión a Internet continua.
+</p>
+<p>
+El presente sistema fue desarrollado como una aplicación de escritorio utilizando <strong>Windows Forms</strong> con el lenguaje de programación C# sobre el framework .NET 4.7.2, lo que garantiza compatibilidad con el sistema operativo Windows instalado en los equipos del plantel educativo.
+</p>
+
+<h2>2.3 Lenguaje de Programación C#</h2>
+<p>
+C# (pronunciado "C sharp") es un lenguaje de programación orientado a objetos, de tipado fuerte, desarrollado por Microsoft como parte de la plataforma .NET. Fue diseñado para ser simple, moderno, flexible y orientado a la productividad del desarrollador. C# soporta los principales paradigmas de programación: orientado a objetos, funcional y orientado a componentes.
+</p>
+<p>
+Sus características principales incluyen: manejo automático de memoria mediante el recolector de basura (Garbage Collector), programación asíncrona con async/await, LINQ para consultas integradas al lenguaje, manejo de excepciones robusto y un ecosistema extenso de librerías a través de NuGet. En este proyecto, C# fue utilizado para implementar toda la lógica de negocio, la capa de acceso a datos y la interfaz gráfica del sistema.
+</p>
+
+<h2>2.4 Windows Forms (WinForms)</h2>
+<p>
+Windows Forms es una plataforma de interfaz gráfica de usuario (GUI) incluida en .NET Framework. Proporciona un conjunto de controles visuales (formularios, botones, cuadros de texto, grillas de datos, etc.) que permiten construir aplicaciones de escritorio de manera rápida. Cada formulario (Form) en Windows Forms es una ventana que puede contener controles, manejar eventos y ejecutar lógica de negocio.
+</p>
+<p>
+En el sistema desarrollado, Windows Forms fue empleado para crear todas las pantallas: Login, Menú Principal, Gestión de Alumnos, Gestión de Profesores, Listas de Consulta y Gestión de Usuarios, aprovechando el diseñador visual de Visual Studio para un desarrollo ágil de la interfaz.
+</p>
+
+<h2>2.5 Base de Datos</h2>
+<p>
+Una base de datos es una colección organizada y estructurada de datos almacenados electrónicamente en un sistema computacional. Las bases de datos son administradas por Sistemas Gestores de Bases de Datos (SGBD), que proporcionan mecanismos para almacenar, recuperar, actualizar y gestionar datos de forma eficiente, segura y confiable.
+</p>
+<p>
+Las bases de datos relacionales organizan los datos en tablas (relaciones) compuestas por filas (registros) y columnas (atributos), y utilizan el lenguaje SQL (Structured Query Language) para la manipulación y consulta de datos. Este modelo garantiza la integridad referencial entre tablas mediante el uso de llaves primarias y foráneas.
+</p>
+
+<h2>2.6 Microsoft SQL Server</h2>
+<p>
+Microsoft SQL Server es un sistema gestor de bases de datos relacionales (SGBDR) desarrollado por Microsoft. Es ampliamente utilizado en entornos empresariales por su robustez, escalabilidad, seguridad y capacidades avanzadas de administración. SQL Server ofrece características como transacciones ACID, procedimientos almacenados, triggers, vistas, índices y replicación de datos.
+</p>
+<p>
+Para el presente proyecto se utilizó <strong>SQL Server Express 2019/2025</strong>, que es la versión gratuita de SQL Server, ideal para aplicaciones de pequeña y mediana escala. La instancia se configuró como <code>.\SQLEXPRESS</code> en el servidor local, con autenticación mixta (Windows y SQL Server) para permitir conexiones remotas desde equipos en red.
+</p>
+<p>La base de datos del proyecto, denominada <strong>entradas_tecnologico</strong>, contiene las siguientes tablas principales:</p>
+<ul>
+  <li><strong>alumnos</strong>: Almacena el número de control, nombre, apellido, carrera, correo, semestre, grupo e imagen del alumno.</li>
+  <li><strong>profesores</strong>: Contiene el ID, cédula profesional (RFC), nombre, apellido, teléfono, correo y sexo del docente.</li>
+  <li><strong>usuarios</strong>: Gestiona las credenciales de acceso al sistema, incluyendo rol, estado de conexión y última sesión.</li>
+</ul>
+
+<h2>2.7 ADO.NET y Conexión a Base de Datos</h2>
+<p>
+ADO.NET (ActiveX Data Objects for .NET) es la tecnología de acceso a datos de Microsoft para aplicaciones .NET. Proporciona un conjunto de clases que permiten conectarse a fuentes de datos, ejecutar comandos SQL y recuperar resultados. Los componentes principales utilizados en el proyecto son:
+</p>
+<ul>
+  <li><strong>SqlConnection</strong>: Establece la conexión con SQL Server mediante una cadena de conexión (Connection String).</li>
+  <li><strong>SqlCommand</strong>: Ejecuta comandos SQL (SELECT, INSERT, UPDATE, DELETE) o procedimientos almacenados.</li>
+  <li><strong>SqlDataAdapter</strong>: Actúa como puente entre la base de datos y un DataTable, llenando este último con los resultados de una consulta.</li>
+  <li><strong>DataTable</strong>: Representa una tabla de datos en memoria, utilizada para mostrar información en controles DataGridView.</li>
+</ul>
+
+<h2>2.8 Arquitectura Cliente-Servidor</h2>
+<p>
+La arquitectura cliente-servidor es un modelo de diseño de software que divide las tareas entre proveedores de recursos o servicios (servidores) y los que los solicitan (clientes). En esta arquitectura, el servidor centraliza los datos y la lógica de negocio, mientras que los clientes proporcionan la interfaz de usuario y envían solicitudes al servidor.
+</p>
+<p>
+El sistema desarrollado implementa esta arquitectura de la siguiente manera: una PC actúa como servidor ejecutando SQL Server con la base de datos, mientras que otras PCs en la red actúan como clientes ejecutando el ejecutable de la aplicación Windows Forms. La comunicación se realiza a través del protocolo TCP/IP en el puerto 1433 (puerto estándar de SQL Server).
+</p>
+
+<h2>2.9 Cómputo en la Nube</h2>
+<p>
+El cómputo en la nube (Cloud Computing) es un modelo de prestación de servicios de tecnología de la información que permite el acceso ubicuo, conveniente y bajo demanda a un conjunto compartido de recursos informáticos configurables (redes, servidores, almacenamiento, aplicaciones y servicios) que pueden aprovisionarse y liberarse rápidamente con un mínimo esfuerzo de gestión o interacción con el proveedor del servicio (NIST, 2011).
+</p>
+<p>Los modelos de servicio en la nube se clasifican en:</p>
+<ul>
+  <li><strong>IaaS (Infrastructure as a Service)</strong>: Provisión de infraestructura virtualizada como máquinas virtuales, almacenamiento y redes. Ejemplos: Amazon EC2, Google Compute Engine, Microsoft Azure VMs.</li>
+  <li><strong>PaaS (Platform as a Service)</strong>: Entorno de desarrollo y despliegue gestionado. Ejemplos: Google App Engine, Heroku, Azure App Service.</li>
+  <li><strong>SaaS (Software as a Service)</strong>: Software listo para usar accesible desde el navegador. Ejemplos: Gmail, Microsoft 365, Salesforce.</li>
+</ul>
+
+<h2>2.10 Servidores en la Nube: Heroku</h2>
+<p>
+<strong>Heroku</strong> es una plataforma de computación en la nube como servicio (PaaS) que permite a los desarrolladores desplegar, gestionar y escalar aplicaciones. Fue fundada en 2007 y adquirida por Salesforce en 2010. Heroku soporta múltiples lenguajes de programación como Ruby, Java, Node.js, Python, PHP, Go y Scala.
+</p>
+<p>
+Heroku simplifica el proceso de despliegue al abstraer la infraestructura subyacente. Los desarrolladores solo necesitan enviar su código mediante Git, y Heroku se encarga del aprovisionamiento, configuración y escalado del servidor. Utiliza el concepto de <strong>Dynos</strong> (contenedores ligeros) para ejecutar las aplicaciones y ofrece un ecosistema de complementos (add-ons) para bases de datos, caché, monitoreo y más.
+</p>
+<p>
+En el contexto de este proyecto, aunque el sistema fue implementado en una arquitectura local/red, Heroku representa una alternativa viable para un futuro despliegue en la nube, donde la base de datos SQL Server podría migrarse a un servicio gestionado como <strong>Azure SQL Database</strong> o <strong>Amazon RDS for SQL Server</strong>, y la aplicación convertirse en una aplicación web accesible desde cualquier dispositivo con navegador.
+</p>
+
+<h2>2.11 Otros Proveedores de Nube Relevantes</h2>
+<p>
+Durante el desarrollo del proyecto se evaluaron opciones de alojamiento en la nube como alternativa a la arquitectura local:
+</p>
+<ul>
+  <li><strong>Google Cloud SQL</strong>: Servicio de base de datos relacional gestionado de Google Cloud Platform. Compatible con SQL Server, MySQL y PostgreSQL. Se configuró una instancia de prueba con IP pública <code>35.232.208.144</code> para evaluar la conectividad remota del sistema.</li>
+  <li><strong>Microsoft Azure SQL Database</strong>: Servicio de base de datos SQL Server totalmente gestionado en la nube de Microsoft, con alta disponibilidad, copias de seguridad automáticas y escalabilidad elástica.</li>
+  <li><strong>Amazon RDS</strong>: Servicio de base de datos relacional de AWS que admite SQL Server, permitiendo administración simplificada de parches, backups y replicación.</li>
+</ul>
+
+<h2>2.12 Seguridad en Sistemas de Información</h2>
+<p>
+La seguridad de la información abarca las prácticas, políticas y controles implementados para proteger los datos contra accesos no autorizados, pérdida, modificación o divulgación. En el sistema desarrollado, la seguridad se implementó en múltiples niveles:
+</p>
+<ul>
+  <li><strong>Autenticación</strong>: Sistema de login con verificación de credenciales (usuario y contraseña) contra la base de datos.</li>
+  <li><strong>Autorización basada en roles</strong>: Dos niveles de acceso diferenciados: superusuario (acceso completo) y usuario estándar (acceso restringido a funciones de consulta y registro).</li>
+  <li><strong>Control de sesiones</strong>: Seguimiento en tiempo real del estado de conexión de los usuarios (en línea/desconectado) y registro de la última conexión.</li>
+  <li><strong>Validación de entradas</strong>: Validaciones en el frontend que previenen la inserción de datos incorrectos o maliciosos.</li>
+  <li><strong>Consultas parametrizadas</strong>: Uso de parámetros SQL (@parametro) en todos los comandos de base de datos para prevenir inyección SQL.</li>
+</ul>
+
+<h2>2.13 Programación Orientada a Objetos</h2>
+<p>
+La Programación Orientada a Objetos (POO) es un paradigma de programación que organiza el software en torno a objetos, que son instancias de clases. Una clase es un molde que define atributos (datos) y métodos (comportamientos). Los cuatro pilares de la POO son: encapsulamiento, herencia, polimorfismo y abstracción.
+</p>
+<p>
+En el desarrollo del sistema, la POO se aplicó estructurando el código en clases especializadas: <code>Config</code> (configuración de conexión), <code>BaseDeDatos</code> (capa de acceso a datos con métodos estáticos para cada operación CRUD), <code>Session</code> (gestión de la sesión del usuario activo) y <code>Validaciones</code> (lógica de validación de entradas), junto con las clases de formularios Windows Forms para la presentación.
+</p>
+
+<h2>2.14 Control de Versiones con Git y GitHub</h2>
+<p>
+Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear cambios en el código fuente, colaborar con otros desarrolladores y gestionar diferentes versiones del software. GitHub es una plataforma en línea basada en Git que facilita el alojamiento de repositorios, revisión de código y colaboración en equipo.
+</p>
+<p>
+Durante el desarrollo del proyecto, Git y GitHub fueron utilizados para el control de versiones del código fuente, permitiendo mantener un historial de cambios, gestionar ramas de desarrollo para nuevas funcionalidades y realizar respaldos seguros del proyecto en la nube.
+</p>
+</div>
+
+</body>
+</html>

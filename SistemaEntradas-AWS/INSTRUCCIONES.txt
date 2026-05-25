@@ -1,0 +1,22 @@
+﻿================================================
+  SISTEMA DE ENTRADAS - TECNOLÓGICO
+  Versión AWS - Marzo 2026
+================================================
+
+REQUISITOS:
+  - Windows 7 o superior
+  - .NET Framework 4.7.2 (ya incluido en Windows 10/11)
+  - Conexión a Internet (para conectarse a AWS)
+
+INSTRUCCIONES:
+  1. Ejecutar: proyecto.exe
+  2. Usuario:  admin
+  3. Contraseña: admin123
+
+BASE DE DATOS:
+  - Servidor: AWS RDS SQL Server (Ohio, us-east-2)
+  - Host: database-1entradas-tecnologico-db.ctao62c4on29.us-east-2.rds.amazonaws.com
+  - La conexión es automática, no se requiere configuración adicional.
+
+NOTA: Este sistema requiere conexión a Internet para funcionar.
+================================================

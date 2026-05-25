@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+    <connectionStrings>
+        <add name="DBConnection" 
+             connectionString="Server=.\SQLEXPRESS;Initial Catalog=entradas_tecnologico;Integrated Security=True;MultipleActiveResultSets=False;Connection Timeout=10;"
+             providerName="System.Data.SqlClient" />
+    </connectionStrings>
+    <!-- 
+        INSTRUCCIONES:
+        1. Copia este archivo y renómbralo a "App.config"
+        2. Rellena los valores reales según tu entorno
+        3. NUNCA subas App.config al repositorio (está en .gitignore)
+    -->
+    <appSettings>
+        <!-- IP del servidor SQL (solo para Modo = "red") -->
+        <add key="IPServidor" value="ESCRIBE_LA_IP_AQUI"/>
+        <!-- Contraseña del usuario 'sa' en SQL Server (solo para Modo = "red") -->
+        <add key="PasswordRed" value="ESCRIBE_LA_PASSWORD_AQUI"/>
+        <!-- Contraseña del usuario de Google Cloud SQL (solo para Modo = "nube") -->
+        <add key="PasswordNube" value="ESCRIBE_LA_PASSWORD_AQUI"/>
+    </appSettings>
+</configuration>

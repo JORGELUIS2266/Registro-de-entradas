@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace proyecto
@@ -16,7 +13,26 @@ namespace proyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            bool loggedOut = false;
+            do
+            {
+                loggedOut = false;
+                using (Login loginForm = new Login())
+                {
+                    if (loginForm.ShowDialog() == DialogResult.OK)
+                    {
+                        using (Form1 mainForm = new Form1())
+                        {
+                            Application.Run(mainForm);
+                            if (mainForm.DialogResult == DialogResult.Retry)
+                            {
+                                loggedOut = true;
+                            }
+                        }
+                    }
+                }
+            } while (loggedOut);
         }
     }
 }
